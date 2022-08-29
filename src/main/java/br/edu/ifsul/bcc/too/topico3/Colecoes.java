@@ -1,7 +1,7 @@
 
-package br.edu.ifsul.bcc.too.base.topico3;
+package br.edu.ifsul.bcc.too.topico3;
 
-import br.edu.ifsul.bcc.too.base.topico3.util.Aluno;
+import br.edu.ifsul.bcc.too.topico3.util.Aluno;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;

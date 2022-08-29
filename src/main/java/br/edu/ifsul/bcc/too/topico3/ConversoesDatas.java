@@ -1,5 +1,5 @@
 
-package br.edu.ifsul.bcc.too.base.topico3;
+package br.edu.ifsul.bcc.too.topico3;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

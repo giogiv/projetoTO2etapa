@@ -1,9 +1,9 @@
 
-package br.edu.ifsul.bcc.too.base.topico3.exercicios;
+package br.edu.ifsul.bcc.too.topico3.exercicios;
 
-import br.edu.ifsul.bcc.too.base.topico3.Colecoes;
-import br.edu.ifsul.bcc.too.base.topico3.util.Aluno;
-import br.edu.ifsul.bcc.too.base.topico3.util.Carro;
+import br.edu.ifsul.bcc.too.topico3.Colecoes;
+import br.edu.ifsul.bcc.too.topico3.util.Aluno;
+import br.edu.ifsul.bcc.too.topico3.util.Carro;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;

@@ -1,5 +1,5 @@
 
-package br.edu.ifsul.bcc.too.base.topico3.util;
+package br.edu.ifsul.bcc.too.topico3.util;
 
 import java.util.Date;
 
