@@ -59,7 +59,6 @@ public class TratamentoExcecoes {
             System.out.println("Erro ao converter a string " + strValor2);
             System.out.println("getLocalizedMessage: " + e.getLocalizedMessage());
             
-            
             e.printStackTrace();
         }catch(Exception e){       
             System.out.println("Erro ao converter a string: "+strValor2);

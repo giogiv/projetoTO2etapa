@@ -1,6 +1,8 @@
 
 package br.edu.ifsul.bcc.too.topico3;
 
+import java.lang.Object;
+
 /**
  *
  * @author telmo
@@ -44,29 +46,36 @@ public class TiposDados {
         String strAuxiliar2 = new String("Internacional");
         String strAuxiliar3 = "Internacional";
         
+        /*
         if(strAuxiliar == strAuxiliar3){
             System.out.println("Instâncias iguais - strAuxiliar == strAuxiliar3 ");
         }else{
             System.out.println("instancias diferentes. - strAuxiliar == strAuxiliar3 ");
         }
-        
+        */
+        /*
         if(strTime == strAuxiliar){
             System.out.println("Instâncias iguais - strTime == strAuxiliar ");
         }else{
             System.out.println("instancias diferentes. - strTime == strAuxiliar");
         }
+        */
         
+        /*
         if(strTime == strAuxiliar2){
             System.out.println("Instâncias iguais - strTime == strAuxiliar2");
         }else{
             System.out.println("instancias diferentes.  - strTime == strAuxiliar2");
         }
-
+        */
+        
+        
         if(strTime.equals(strAuxiliar)){
             System.out.println("conteúdos iguais - strTime.equals(strAuxiliar)");
         }else{
             System.out.println("conteúdos diferentes - strTime.equals(strAuxiliar)");
-        }        
+        }     
+        
         
     }
     

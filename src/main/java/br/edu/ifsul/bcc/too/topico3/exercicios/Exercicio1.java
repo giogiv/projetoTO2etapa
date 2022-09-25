@@ -33,10 +33,36 @@ public class Exercicio1 {
                 
                 System.out.println("Digite um valor: ");
                 if(sc.hasNext()){
-                    rgDados1[linha][coluna] = Integer.parseInt(sc.next());
+                    //casting de float para int
+                    //nesse caso o casting vai funcionar  por os inteiros estao dentro dos decimais
+                    rgDados1[linha][coluna] =   (int) Float.parseFloat(sc.next());
                 }                
             }                        
-        }        
+        } 
+        
+        
+        for (int linha=0; linha < rgDados2.length; linha++){
+            
+            for(int coluna=0; coluna < rgDados2[linha].length; coluna++){
+                
+                System.out.println("Digite um valor para a rgDados2: ");
+                if(sc.hasNext()){
+                    rgDados2[linha][coluna] = Integer.parseInt(sc.next());
+                    
+                    rgDados3[linha][coluna] = rgDados1[linha][coluna] + rgDados2[linha][coluna];
+                }                
+            }                        
+        } 
+        
+        for (int linha=0; linha < rgDados2.length; linha++){
+            
+            for(int coluna=0; coluna < rgDados2[linha].length; coluna++){
+                
+                System.out.print(rgDados3[linha][coluna] + "\t");
+                            
+            }
+            System.out.println("\n");
+        } 
 
         
     }

@@ -7,8 +7,10 @@ package br.edu.ifsul.bcc.too.topico3.exercicios;
 public class Exercicio4 {
 
     /*
-      4) Teste e recupere duas informações recebidas por parâmetro no método main. Para isso execute a main informando dois valores. 
-         Caso os valores sejam inteiros positivos. Calcule a média e imprima na tela o resultado. Caso contrário, informe e finalize o programa.
+      4) Teste e recupere duas informações recebidas por parâmetro no método main. Para isso execute 
+          a main informando dois valores. 
+         Caso os valores sejam inteiros positivos. Calcule a média e imprima na tela o resultado. 
+         Caso contrário, informe e finalize o programa.
              
         Comando para compilação (a partir do diretorio java): javac br/edu/ifsul/bcc/too/base/topico3/exercicios/Exercicio4.java
     
@@ -20,8 +22,35 @@ public class Exercicio4 {
 
     public static void main(String[] args) {
 
-        if (args.length > 0) {
-            System.out.println("Parametro/argumento recebido pela funcao main: " + args[2]);
+        if (args.length == 2) {
+            
+            try{
+                
+                //float f = Float.parseFloat(....
+                int param1 = Integer.parseInt(args[0]);
+                
+                int param2 = Integer.parseInt(args[1]);
+                
+                System.out.println("media: " +  (param1 + param2) / 2 );
+                
+                
+                
+            }catch(NumberFormatException param){
+                
+                System.out.println("valores invalidos !!!!");
+                
+                //imprime na saida padrao a mensagem do erro
+                param.getLocalizedMessage();
+                
+                //imprime na saida padrao a pilha de erros
+                //param.printStackTrace();
+                
+                
+            }
+            
+            
+            
+           // System.out.println("Parametro/argumento recebido pela funcao main: " + args[2]);
         } else {
             System.out.println("Não recebeu Parametro/argumento recebido pela funcao main.");
         }

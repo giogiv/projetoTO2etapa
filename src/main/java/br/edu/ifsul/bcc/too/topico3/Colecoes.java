@@ -4,6 +4,7 @@ package br.edu.ifsul.bcc.too.topico3;
 import br.edu.ifsul.bcc.too.topico3.util.Aluno;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -49,11 +50,16 @@ public class Colecoes {
             Map   - mapeia chave para valores.
 
     */ 
+
+    //atributo de instância.
+    private Collection<Integer> minhaLista;
     
     //atributo de instância.
     private List<Integer> lst;
         
     private Map<String, String> mp;
+    
+
     
     //construtor        
     protected Colecoes(){
@@ -130,6 +136,7 @@ public class Colecoes {
         map.put("-1" , new Aluno("789a","abel"));
         map.put("3" , new Aluno("123a","telmo"));
         
+        
         for (Map.Entry<String, Aluno> m : map.entrySet()) {
         
             System.out.println("Chave "+m.getKey() + " Valor : "+ m.getValue());    
@@ -141,13 +148,13 @@ public class Colecoes {
         
         List<Aluno> list = new ArrayList();
         
-        Aluno a = new Aluno("20222.pf001","telmo");
+        Aluno a = new Aluno("pf009","telmo");
         list.add(a);
         
-        Aluno b = new Aluno("20221.pf002","junior");
+        Aluno b = new Aluno("pf002","junior");
         list.add(b);
         
-        Aluno c = new Aluno("20212.pf003","fulano");
+        Aluno c = new Aluno("pf003","fulano");
         list.add(c);
         
         System.out.println(list);
@@ -161,11 +168,17 @@ public class Colecoes {
     
     public static void main(String[] args) {
         
-        // new Colecoes().metodoClassificacao();
+      //  new Colecoes().metodoClassificacaoMap();
         
-           Colecoes c = new Colecoes("0");
+       new Colecoes().metodoClassificacao();
         
-         //c.metodoHashmap();
+      //  Colecoes c = new Colecoes(0);
+        
+        //c.metodoHashmap();
+        
+     //   new Colecoes().metodoHashmap();
+     
+     
     }
     
 }

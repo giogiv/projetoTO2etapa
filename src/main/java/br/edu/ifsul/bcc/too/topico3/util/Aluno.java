@@ -23,8 +23,19 @@ public class Aluno implements Comparable<Aluno> {
 
     @Override
     public int compareTo(Aluno t) {
-
-        return this.matricula.compareTo(t.matricula);
+        
+        //ascendente pela matricula
+        //return this.matricula.compareTo(t.matricula);
+        
+        //descendente pela matricula
+        //return t.matricula.compareTo(this.matricula);
+        
+        //ascendente pelo nome
+        //return this.nome.compareTo(t.nome);
+        
+        //desccendente pelo nome
+        return t.nome.compareTo(this.nome);
+        
     }
     
     @Override

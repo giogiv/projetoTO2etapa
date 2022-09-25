@@ -32,7 +32,8 @@ public class ManipulacaoStrings {
         
         //comando: ==, equals, equalsIgnoreCase, compareTo, compareToIgnoreCase
         
-        //Principais métodos da classe String: concat, String.valueOf, Length, startsWith endsWith, indexOf, substring, replace, trim
+        //Principais métodos da classe String: concat, String.valueOf, Length, startsWith endsWith, 
+        //indexOf, substring, replace, trim
     }
     
     
