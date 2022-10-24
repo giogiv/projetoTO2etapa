@@ -5,7 +5,34 @@ package br.edu.ifsul.bcc.too.topico3.exercicios;
  *
  * @author telmo
  */
+import br.edu.ifsul.bcc.too.topico3.util.Compra;
+import java.util.List;
+import java.util.ArrayList;
+
+
 public class Exercicio8 {
+    
+    
+    Exercicio8(){
+        
+        //inicializando a lista.
+        List<Compra> lista = new ArrayList();
+    
+        //criando o objeto c do tipo Compra
+        Compra c = new Compra(null, null, null);
+        
+        lista.add(c);//adicionando o objeto c na lista.
+        
+        
+        //criando o objeto c do tipo Compra
+        Compra c2 = new Compra();
+        c2.setCodigo(1);
+        
+        lista.add(c2);//adiciona na lista.
+        
+    }
+    
+    
     
     /*
      8. Codifique um método na classe Exercicio8 para criar e inicializar cinco 

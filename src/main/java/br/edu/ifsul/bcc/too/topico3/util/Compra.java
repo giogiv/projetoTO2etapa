@@ -38,6 +38,14 @@ public class Compra {
         
     }
 
+    
+    public Compra(){
+        
+    }
+    
+    
+    
+    
     /**
      * @return the data_emissao
      */
@@ -59,10 +67,24 @@ public class Compra {
             
             SimpleDateFormat f = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss SSS");            
             
-            return "Codigo: "+codigo+ " Emissao: "+f.format(data_emissao.getTime()) + " Saída: "+f.format(data_saida);
+            return "Codigo: "+getCodigo()+ " Emissao: "+f.format(data_emissao.getTime()) + " Saída: "+f.format(data_saida);
         }
             
         return super.toString();
+    }
+
+    /**
+     * @return the codigo
+     */
+    public Integer getCodigo() {
+        return codigo;
+    }
+
+    /**
+     * @param codigo the codigo to set
+     */
+    public void setCodigo(Integer codigo) {
+        this.codigo = codigo;
     }
     
     
