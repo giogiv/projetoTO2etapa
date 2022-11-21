@@ -1,12 +1,56 @@
+package br.edu.ifsul.bcc.too.topico4.exercicios;
 
-package br.edu.ifsul.bcc.too.base.topico4.exercicios;
+import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
  * @author telmo
  */
 public class Exercicio9 {
-    
+	
+	public void Exercicio() {
+		// String cpf, String nome, String corOlhos, String corCabelo, Calendar dataNascimento, Float altura
+				
+		Calendar data1 =  Calendar.getInstance();
+		data1.set(2003, 6, 21);
+		
+		Calendar data2 =  Calendar.getInstance();
+		data2.set(2001, 2, 1);
+		
+		Calendar data3 =  Calendar.getInstance();
+		data3.set(2002, 11, 14);
+		
+		Calendar data4 =  Calendar.getInstance();
+		data4.set(2003, 8, 7);
+		
+		Calendar data5 =  Calendar.getInstance();
+		data5.set(2000, 4, 11);
+		
+		PessoaEncapsulada pessoa1 = new PessoaEncapsulada("11", "Clara", "Castanho", "Loiro", data1, Float.parseFloat("1.63"));
+		PessoaEncapsulada pessoa2 = new PessoaEncapsulada("22", "Julia", "Verde", "Ruivo", data2, Float.parseFloat("1.67"));
+		PessoaEncapsulada pessoa3 = new PessoaEncapsulada("33", "Denis", "Azul", "Castanho", data3, Float.parseFloat("1.78"));
+		PessoaEncapsulada pessoa4 = new PessoaEncapsulada("44", "Noah", "Preto", "Loiro", data4, Float.parseFloat("1.76"));
+		PessoaEncapsulada pessoa5 = new PessoaEncapsulada("55", "Sophia", "Mel", "Preto", data5, Float.parseFloat("1.60"));
+		
+		
+		Map<Integer, PessoaEncapsulada> mapPessoas = new HashMap();
+	    
+		mapPessoas.put(1, pessoa1);
+		mapPessoas.put(2, pessoa2);
+		mapPessoas.put(3, pessoa3);
+		mapPessoas.put(4, pessoa4);
+		mapPessoas.put(5, pessoa5);
+	                    
+	     for (Map.Entry<Integer, PessoaEncapsulada> valor : mapPessoas.entrySet()) { 
+	           System.out.println(valor.getValue().toString());    
+	     } 
+	}
+	
+	public static void main(String args[]){
+        new Exercicio9().Exercicio();
+    }
     /*    
     9. Utilizando o conceito de encapsulamento, crie métodos públicos na classe br.edu.ifsul.bcc.too.base.topico4.PessoaEncapsulada
        para disponibilizar o acesso aos atributos da instância: corOlhos, corCabelo, dataNascimento, altura.

@@ -1,7 +1,6 @@
 
-package br.edu.ifsul.bcc.too.base.topico4;
+package br.edu.ifsul.bcc.too.topico4;
 
-import com.sun.jdi.InterfaceType;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.logging.Level;
